@@ -5,7 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 interface IMenuProps {
   show?: boolean;
-  setShow?: (val: boolean) => void;
+  setShow(val: boolean): void;
 }
 const MenuMobile = ({ show, setShow }: IMenuProps) => {
   return (
@@ -36,7 +36,7 @@ const MenuMobile = ({ show, setShow }: IMenuProps) => {
 
 export default MenuMobile;
 interface IProps {
-  show: boolean;
+  show?: boolean;
 }
 const BurGerNav = styled.div<IProps>`
   position: fixed;
