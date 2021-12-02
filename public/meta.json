@@ -1,0 +1,73 @@
+{
+  "name": "network",
+  "Choose": [
+    {
+      "name": "Speed",
+      "description": "Arab is able to serve up to 15000+ Transactions Per Second Arab processes thousands of transactions per second and extends to do even more.",
+      "url": "https://tailwindcss.com/docs",
+      "icon": "/assets/images/icons/speed.svg"
+    },
+    {
+      "name": "flexible and easy-to-use free modules",
+      "description": "There are two cost models available, with the opportunity for projects to fund user Fees.",
+      "url": "https://styled-components.com/docs",
+      "icon": "/assets/images/icons/coin.svg"
+    },
+    {
+      "name": "Energy Efficient",
+      "description": "Arab Network (DPoS) consensus model is a game-changer, unlike other blockchains, it uses very low power usage while giving high speed on a stable base.",
+      "url": "https://redux.js.org/introduction/getting-started",
+      "icon": "/assets/images/icons/earth.svg"
+    },
+    {
+      "name": "Human-Friendly Names",
+      "description": "Unique human-readable names easy to remember.",
+      "url": "https://redux-toolkit.js.org/rtk-query/overview",
+      "icon": "/assets/images/icons/human.svg",
+      "Follow": "Follow"
+    },
+    {
+      "name": "unknown",
+      "description": "There are two cost models available, with the opportunity for projects to fund user Fees.",
+      "url": "https://github.com/isaachinman/next-i18next",
+      "icon": "/assets/images/icons/human.svg"
+    },
+    {
+      "name": "Technology",
+      "description": "Arab is planning to be one of the first blockchains compatible with both eosio c++ smart contracts and solidity-based Ethereum Virtual Machine smart contracts in the near future. This will expose Arab to today's largest developer community.",
+      "url": "https://github.com/isaachinman/next-i18next",
+      "icon": "/assets/images/icons/technical.svg"
+
+    }
+  ],
+  "Socail": [
+    {
+      "name": "Read The Latest News",
+      "description": "Follow Arab Network on Twitter",
+      "url": "https://tailwindcss.com/docs",
+      "icon": "Twitter",
+      "Follow": "Follow"
+    },
+    {
+      "name": "Participate in open discussion",
+      "description": "Join Arap Network Telegram the Largest Arab Community on Telegrams",
+      "url": "https://styled-components.com/docs",
+      "icon": "Telegram",
+      "Follow": "Follow"
+    },
+    {
+      "name": "Participate in open discussion",
+      "description": "Join Arap Network YouTube Channel the Largest Arab Community on YouTube",
+      "url": "https://redux.js.org/introduction/getting-started",
+      "icon": "YouTube",
+      "Follow": "Follow"
+    },
+    {
+      "name": "Participate in open discussion",
+      "description": "Join Arab Network Facebook Channel the Largest Arab Community on FaceBook",
+      "url": "https://redux.js.org/introduction/getting-started",
+      "icon": "Facebook",
+      "Follow": "Follow"
+    }
+  ]
+}

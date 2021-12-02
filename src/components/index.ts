@@ -1,0 +1,10 @@
+export { default as Header } from "./header";
+export { default as Logo } from "./logo";
+export { default as Slider } from "./slider";
+export { Main } from "./main";
+export { default as Button } from "./button";
+export { Cards } from "./cards";
+export { default as Footer } from "./footer";
+export { Container } from "./container";
+export { default as Subscribe } from "./Subscribe";
+export { default as Stars } from "./Stars";

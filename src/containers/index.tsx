@@ -1,0 +1,21 @@
+export { default as ArabNetWork } from "./network/ArabNetwork";
+export { default as ChooseUs } from "./choose/ChooseUs";
+export { default as Academy } from "./acodemy/Academy";
+export { default as Research } from "./Research/Research";
+export { default as Wallet } from "./wallet/Wallet";
+export { default as NewsLetter } from "./newsletter/NewsLetter";
+export { default as RoadMap } from "./roadmap/RoadMap";
+export { default as SliderContainer } from "./slider/slider";
+export { default as SliderInvolved } from "./SliderInvolved";
+export { default as SocailCard } from "./socialcard/SocialCard";
+export { default as AboutContainer } from "./about/AboutContainer";
+export { default as ContactContainer } from "./contact/ContactContainer";
+export { default as EvmContainer } from "./EVM/EvmContainer";
+export { default as TeamContainer } from "./team/TeamContainer";
+export { default as CommunityContainer } from "./community/CommunityContainer";
+export { default as CommonSliderr } from "./wallet-dex/CommonSliderr";
+export { default as CommonCard } from "./wallet-dex/CommonCard";
+export { default as FooterContent } from "./wallet-dex/FooterContent";
+export { default as TutorailContainer } from "./tutorial/TutorailContainer";
+export { default as TutorailDetailsContainer } from "./tutorialDetails/TutorailDetailsContainer";
+
