@@ -32,6 +32,6 @@ const Desc = styled.div`
 `;
 
 const Container = styled.div`
-  ${tw`max-w-screen-2xl mx-auto w-full`};
+  ${tw`max-w-screen-xl mx-auto w-full`};
 `;
 export { BgWallet, Row, Col, Title, SubTitle, Desc, Container };

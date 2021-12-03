@@ -6,12 +6,26 @@ const Research = () => {
       <Container>
         <Row>
           <Col>
-            <div className={"IMG_RESERSH"}>
-              <img
-                className={"object-cover w-full h-full border"}
-                src="../../assets/images/bg/polygon.svg"
-                alt=""
-              />
+            <div className={"IMG_RESERSH"} style={{ width: 340 }}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 558 541"
+              >
+                <defs>
+                  <clipPath id="b">
+                    <rect width="558" height="541"></rect>
+                  </clipPath>
+                </defs>
+                <g id="a" clip-path="url(#b)">
+                  <path
+                    d="M473.954,572.1,245.024,404.555a50,50,0,0,1-18.057-55.7L314.558,77.316a50,50,0,0,1,47.586-34.651H644.821a50,50,0,0,1,47.586,34.651L780,348.857a50,50,0,0,1-18.057,55.7L533.012,572.1a50,50,0,0,1-59.058,0Z"
+                    transform="translate(-224.415 -42.665)"
+                    fill="silver"
+                  ></path>
+                </g>
+              </svg>
             </div>
           </Col>
           <Col>

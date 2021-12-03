@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import tw from "twin.macro";
 
 const Container = styled.div`
-  ${tw`px-4 container mx-auto max-w-screen-2xl w-full`};
+  ${tw`px-4  mx-auto max-w-screen-xl w-full`};
 `;
 const Wrapper = styled.div`
   position: relative;
@@ -24,15 +24,27 @@ const Col = styled.div`
 `;
 
 const List = styled.div`
-  ${tw`space-x-3 flex items-center`};
+  ${tw`space-x-3 flex items-center whitespace-nowrap`};
 `;
 const ListItems = styled.div`
   a {
     color: #d4dade;
   }
 `;
+
 const SubMenu = styled.div`
-  ${tw`hidden`};
+  background-color: #ccd4d9;
+  -webkit-box-shadow: 0 5px 15px rgb(173 181 189 / 50%);
+  box-shadow: 0 5px 15px rgb(173 181 189 / 50%);
+  min-width: 150px;
+  transform: translateY(6px);
+  left: 0;
+  ${tw`hidden rounded-md top-4 py-4 px-2 absolute z-50`};
+
+  ul a {
+    color: #3b3b3b;
+    ${tw`hover:text-Blue`};
+  }
 `;
 const WrapperIcon = styled.div`
   svg {

@@ -6,7 +6,7 @@ const Wrapper = styled.div`
 `;
 
 const BgTeam = styled.div`
-  background-color: #F0EEE7;
+  background-color: #f0eee7;
   padding: 140px 0;
   margin-top: -79px;
 `;
@@ -35,10 +35,9 @@ const CardHeader = styled.div`
     position: absolute;
     top: 35px;
     left: 15px;
-    img{
+    img {
       left: -21px;
       top: 168px;
-      
     }
   }
 `;
@@ -51,6 +50,6 @@ const CardBody = styled.div`
 `;
 
 const Container = styled.div`
-  ${tw`w-full max-w-screen-2xl mx-auto px-4`}
+  ${tw`w-full max-w-screen-xl mx-auto px-4`}
 `;
-export {Wrapper, BgTeam, Card, CardHeader, CardBody, Container};
+export { Wrapper, BgTeam, Card, CardHeader, CardBody, Container };

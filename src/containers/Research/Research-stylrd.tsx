@@ -21,14 +21,16 @@ const Container = styled.div`
   }
 `;
 const Title = styled.h3`
-  ${tw`text-Blue font-medium text-xl`};
+  color: #3b3b3b;
+  ${tw`text-lg font-bold md:text-3xl`};
 `;
 const Desc = styled.p`
   color: #81807e;
   ${tw`leading-4 text-sm md:text-lg my-3`}
 `;
 const SubTitle = styled.p`
-  ${tw`leading-4 text-sm md:text-lg my-3`}
+  color: #0668af;
+  ${tw`leading-4 text-sm md:text-2xl font-bold my-3`}
 `;
 
 export { Row, Col, Container, Desc, Title, SubTitle };
