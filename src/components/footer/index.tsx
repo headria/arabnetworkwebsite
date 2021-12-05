@@ -13,19 +13,19 @@ import SocialMedia from "./SocialMedia";
 const NavigateMenus = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
   },
   {
     title: "About Us",
-    url: "#",
+    url: "/about-us",
   },
   {
     title: "Contact Us",
-    url: "#",
+    url: "/contact-us",
   },
   {
     title: "Team",
-    url: "#",
+    url: "/team",
   },
 ];
 
