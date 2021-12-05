@@ -55,7 +55,7 @@ const NavLinks = () => {
               <NavLink
                 title="Arab Wallet"
                 className="sub-menu-item"
-                url="/arab-wallet"
+                url="/wallet"
               />
               <NavLink title="Arab Dex" className="sub-menu-item" url="/dex" />
               <NavLink
