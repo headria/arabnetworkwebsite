@@ -1,6 +1,6 @@
-import { IParticlesParams } from "react-particles-js";
+import { IOptions, RecursivePartial, SingleOrMultiple } from "tsparticles";
 
-export const params: IParticlesParams = {
+export const params: SingleOrMultiple<RecursivePartial<IOptions>> = {
   particles: {
     number: {
       value: 80,
