@@ -8,7 +8,8 @@ const Wrapper = styled.div`
   position: relative;
   header {
     z-index: 100;
-    ${tw`fixed w-full top-0 `}
+    position: fixed;
+    ${tw` w-full top-0 `}
   }
 `;
 const Row = styled.div`

@@ -6,6 +6,10 @@ type SliderWrapper = {
 };
 
 const SliderWrapper = styled.div<SliderWrapper>`
+  convas {
+    height: 300px !important;
+  }
+
   ${(props) =>
     props.isFullHeight
       ? css`
@@ -28,7 +32,7 @@ const SliderWrapper = styled.div<SliderWrapper>`
   position: relative;
   width: 100%;
   padding: 20px 0;
-
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,4 +74,11 @@ const SubTitle = styled.h3`
   ${tw`text-lg lg:text-4xl font-normal`}
 `;
 
-export { SliderWrapper, Row, Col, Title, SubTitle };
+const Convas = styled.div`
+  .tsparticles-canvas-el {
+    height: 450px !important;
+    top: 40px !important;
+  }
+`;
+
+export { SliderWrapper, Row, Col, Title, SubTitle, Convas };

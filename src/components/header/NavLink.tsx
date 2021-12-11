@@ -68,7 +68,6 @@ const NavLinks = () => {
         </div>
 
         <NavLink
-          icon={<IoIosArrowDown />}
           title="Developers"
           className={"flex items-center space-x-0.5"}
           url="/developers"

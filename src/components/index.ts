@@ -8,3 +8,4 @@ export { default as Footer } from "./footer";
 export { Container } from "./container";
 export { default as Subscribe } from "./Subscribe";
 export { default as Stars } from "./Stars";
+export { default as Comming } from "./commingsoon/comming";

@@ -23,7 +23,9 @@ const GlobalStyle = createGlobalStyle`
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-
+.h-400{
+  height: 400px;
+}
 
 `;
 

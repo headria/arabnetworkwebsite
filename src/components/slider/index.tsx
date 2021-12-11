@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { SliderWrapper } from "./Slider-styled";
-import { params } from "./particles";
+import { SliderWrapper, Convas } from "./Slider-styled";
+import { params } from "../../config/particles";
 import { tsParticles } from "tsparticles";
 
 interface ISliderProps {
@@ -19,12 +19,7 @@ const Slider = ({ children, fullHeight }: ISliderPorps) => {
   return (
     <>
       <SliderWrapper isFullHeight={fullHeight}>
-        <div id="tsparticles" className="w-full absolute top-0"></div>
-        {/* <Particles
-                    className={""}
-                    canvasClassName={"w-full absolute top-0"}
-                    params={params}
-                /> */}
+        <Convas id="tsparticles" className="" />
         {children}
       </SliderWrapper>
     </>
@@ -32,3 +27,5 @@ const Slider = ({ children, fullHeight }: ISliderPorps) => {
 };
 
 export default Slider;
+
+// w-full h-400 absolute inset-0 top-0
