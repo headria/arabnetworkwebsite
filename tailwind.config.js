@@ -16,6 +16,7 @@ module.exports = {
         dashboardDarkBlue: "#353361",
         darkBrown: "#b05d4e",
         lightGray: "#d1d2cb",
+        darBox: "#1b1e29",
       },
       zIndex: {
         0: 0,

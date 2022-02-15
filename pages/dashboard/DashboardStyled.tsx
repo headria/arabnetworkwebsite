@@ -1,11 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import tw from "twin.macro";
 
 const RightSide = styled.div`
-  ${tw`col-span-3 text-white `}
-  border-left: 1px solid #c0c0c0;
+  ${tw`col-span-3 text-white border-l border-gray-500 pt-9 border-opacity-30 mt-5`}
   height: calc(100vh - 2.5rem);
-  margin-top: 20px;
 `;
 
 const MiddleSide = styled.div`
@@ -17,4 +15,49 @@ const NavSide = styled.div`
   ${tw`col-span-2 text-white`}
 `;
 
-export { RightSide, MiddleSide, NavSide };
+interface NavActive {
+  isActive: boolean;
+}
+const NavItem = styled.div<NavActive>`
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    width: 2rem;
+    height: 2rem;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+  }
+  &:hover svg {
+    color: #fff;
+  }
+
+  ${({ isActive }) => isActive && css``}
+  ${({ isActive }) =>
+    isActive &&
+    css`
+      width: 2rem;
+      height: 2rem;
+      border: 1.5px solid #fff;
+      border-radius: 5px;
+    `}
+  outline:none;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    ${({ isActive }) =>
+      isActive
+        ? css`
+            color: #fff;
+          `
+        : css`
+            color: #0668af;
+          `}
+  }
+`;
+
+export { RightSide, MiddleSide, NavSide, NavItem };
