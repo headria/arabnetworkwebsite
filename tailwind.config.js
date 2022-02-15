@@ -1,4 +1,3 @@
-
 module.exports = {
   purge: ["./pages/**/*.tsx", "./src/**/*.tsx"],
   darkMode: false, // or 'media' or 'class'
@@ -10,6 +9,13 @@ module.exports = {
         LightYellow: "#fffad5",
         LightBlue: "#5f9ecc",
         LightBrown: "#eed9ac",
+        darkBody: "#020303",
+        darkPurpal: "#473ea9",
+        lightPripule: "#8f87e8",
+        mediumPripule: "#847ae0",
+        dashboardDarkBlue: "#353361",
+        darkBrown: "#b05d4e",
+        lightGray: "#d1d2cb",
       },
       zIndex: {
         0: 0,
@@ -25,6 +31,7 @@ module.exports = {
         10000: 10000,
         auto: "auto",
       },
+
       borderWidth: {
         DEFAULT: "1px",
         0: "0",
