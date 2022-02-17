@@ -17,9 +17,7 @@ const Td = styled.td`
 const Table = styled.table`
   ${tw`
   min-w-full
-  divide-y
-  divide-gray-200
-
+  
 `}
 `;
 const Th = styled.th`
@@ -32,9 +30,6 @@ const Thead = styled.thead`
 const Tbody = styled.tbody`
   ${tw`
    bg-white
-   divide-y
-   divide-gray-200
-   dark:divide-gray-100
    dark:bg-black
 `};
 `;
@@ -83,33 +78,5 @@ const View = styled.div`
     md:text-xl
   `};
 `;
-const Switch = styled.div`
-  ${tw`
-     rtl:text-left
-     ltr:text-right
-     `};
 
-  .active {
-    ${tw`
-    bg-gray-300
-    text-blue-400
-    transition-all
-    duration-500
-    ease-in-out
-`}
-  }
-`;
-
-export {
-  Tr,
-  Th,
-  Danger,
-  Td,
-  Success,
-  Thead,
-  Table,
-  Tbody,
-  Button,
-  View,
-  Switch,
-};
+export { Tr, Th, Danger, Td, Success, Thead, Table, Tbody, Button, View };

@@ -14,7 +14,6 @@ const Dashboard = () => {
         <NavSide>side Navbar</NavSide>
         <MiddleSide>
           <div className="w-full border-b border-gray-500 pt-11 border-opacity-30">
-            middle
             <Table />
           </div>
         </MiddleSide>

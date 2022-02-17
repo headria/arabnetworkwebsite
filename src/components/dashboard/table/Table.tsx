@@ -9,35 +9,17 @@ import {
   Button,
   Success,
   Danger,
-  View,
-  Switch,
 } from "./TableStyled";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 const TableCoin: React.FC = () => {
-  const [active, setActive] = useState({
-    Toman: false,
-    Tether: true,
-  });
-
-  const handleActiveToman = () => {
-    setActive({
-      Toman: true,
-      Tether: false,
-    });
-  };
-  const handleActiveTether = () => {
-    setActive({
-      Toman: false,
-      Tether: true,
-    });
-  };
   const { t } = useTranslation();
   return (
     <>
-      <div className="flex flex-col border">
+      <div className="flex flex-col ">
         <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-            <div className="shadow overflow-hidden border-b dark:border-gray-400 border-gray-200 sm:rounded-lg ">
+            <div className="shadow overflow-hidden  sm:rounded-lg ">
               <Table>
                 <Thead>
                   <Tr className="">
@@ -54,9 +36,11 @@ const TableCoin: React.FC = () => {
                     <Td>
                       <div className="flex items-center">
                         <div className="flex-shrink-0 h-10 w-10">
-                          <img
-                            className="h-10 w-10 rounded-full"
-                            src={"./../../../asssets/images/g57-min.png"}
+                          <Image
+                            className={"object-contain rounded-full"}
+                            width={"100%"}
+                            height={"100%"}
+                            src="/assets/images/coin/Group 59-min.png"
                             alt=""
                           />
                         </div>
@@ -88,9 +72,11 @@ const TableCoin: React.FC = () => {
                     <Td>
                       <div className="flex items-center">
                         <div className="flex-shrink-0 h-10 w-10">
-                          <img
-                            className="h-10 w-10 rounded-full"
-                            src={"./../../../asssets/images/g57-min.png"}
+                          <Image
+                            className={"object-contain rounded-full"}
+                            width={"100%"}
+                            height={"100%"}
+                            src="/assets/images/coin/g57-min.png"
                             alt=""
                           />
                         </div>
@@ -122,9 +108,11 @@ const TableCoin: React.FC = () => {
                     <Td>
                       <div className="flex items-center">
                         <div className="flex-shrink-0 h-10 w-10">
-                          <img
-                            className="h-10 w-10 rounded-full"
-                            src={"./../../../asssets/images/g57-min.png"}
+                          <Image
+                            className={"object-contain rounded-full"}
+                            width={"100%"}
+                            height={"100%"}
+                            src="/assets/images/coin/Rectangle 70-min.png"
                             alt=""
                           />
                         </div>
@@ -156,9 +144,11 @@ const TableCoin: React.FC = () => {
                     <Td>
                       <div className="flex items-center">
                         <div className="flex-shrink-0 h-10 w-10">
-                          <img
-                            className="h-10 w-10 rounded-full"
-                            src={"./../../../asssets/images/g57-min.png"}
+                          <Image
+                            className={"object-contain rounded-full"}
+                            width={"100%"}
+                            height={"100%"}
+                            src="/assets/images/coin/Rectangle 72-min"
                             alt=""
                           />
                         </div>
@@ -190,9 +180,11 @@ const TableCoin: React.FC = () => {
                     <Td>
                       <div className="flex items-center">
                         <div className="flex-shrink-0 h-10 w-10">
-                          <img
-                            className="h-10 w-10 rounded-full"
-                            src={"./../../../asssets/images/g57-min.png"}
+                          <Image
+                            className={"object-contain rounded-full"}
+                            width={"100%"}
+                            height={"100%"}
+                            src="/assets/images/coin/Rectangle 70-min.png"
                             alt=""
                           />
                         </div>
