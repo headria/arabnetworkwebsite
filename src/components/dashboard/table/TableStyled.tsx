@@ -78,5 +78,20 @@ const View = styled.div`
     md:text-xl
   `};
 `;
+const Active = styled.div`
+  ${tw`hover:bg-darBox opacity-80 cursor-pointer transition-all ease-in duration-300 rounded-lg w-24 h-20 flex flex-col justify-center items-center`}
+`;
 
-export { Tr, Th, Danger, Td, Success, Thead, Table, Tbody, Button, View };
+export {
+  Tr,
+  Th,
+  Danger,
+  Td,
+  Success,
+  Thead,
+  Table,
+  Tbody,
+  Button,
+  View,
+  Active,
+};

@@ -1,17 +1,13 @@
-import React, { useState } from "react";
-import {
-  Tr,
-  Td,
-  Tbody,
-  Table,
-  Thead,
-  Th,
-  Button,
-  Success,
-  Danger,
-} from "./TableStyled";
+import React from "react";
+import { Tr, Td, Tbody, Table, Thead, Th, Active } from "./TableStyled";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+import {
+  BsArrowUp,
+  BsArrowDown,
+  BsChevronDown,
+  BsChevronUp,
+} from "react-icons/bs";
 const TableCoin: React.FC = () => {
   const { t } = useTranslation();
   return (
@@ -23,12 +19,24 @@ const TableCoin: React.FC = () => {
               <Table>
                 <Thead>
                   <Tr className="">
-                    <Th scope="col">{t("Code_Currency")}</Th>
-                    <Th scope="col">{t("Price_Table")}</Th>
-                    <Th scope="col">{t("Vulome_24")}</Th>
-                    <Th scope="col">{t("Changes")}</Th>
-                    <Th scope="col">{t("Changes_price")}</Th>
-                    <Th scope="col">{t("Traid")}</Th>
+                    <Th className="text-left" scope="col">
+                      {t("Code_Currency")}
+                    </Th>
+                    <Th className="text-left" scope="col">
+                      {t("Price_Table")}
+                    </Th>
+                    <Th className="text-left" scope="col">
+                      {t("Vulome_24")}
+                    </Th>
+                    <Th className="text-left" scope="col">
+                      {t("Changes")}
+                    </Th>
+                    <Th className="text-left" scope="col">
+                      {t("Changes_price")}
+                    </Th>
+                    <Th className="text-left" scope="col-3">
+                      {t("Statistice")}
+                    </Th>
                   </Tr>
                 </Thead>
                 <Tbody>
@@ -45,27 +53,141 @@ const TableCoin: React.FC = () => {
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-gray-900 mr-4 dark:text-white">
-                            بیتکوین
+                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white">
+                            Bitcoin
                           </div>
+                          <span className="text-gray-700 text-opacity-80 mt-2 block">
+                            Link
+                          </span>
                         </div>
                       </div>
                     </Td>
                     <Td>
-                      <div className="text-sm text-gray-900 dark:text-white">
-                        1000,251,000
+                      <div className="text-sm text-white dark:text-white">
+                        $ 26.35
+                      </div>
+                      <div className="text-green-600 inline-flex gap-1 text-xs mt-2">
+                        <BsArrowDown className="" />
+                        <span>$1.67</span>
                       </div>
                     </Td>
-                    <Td>1.18-%</Td>
                     <Td>
-                      {" "}
-                      <Danger>1.18-%</Danger>
+                      <Active>
+                        <p className="text-red-600">-2.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
                     </Td>
-                    <Td>چارت</Td>
                     <Td>
-                      <Button color="#23d10f" className="">
-                        {t("Buy")}
-                      </Button>
+                      <Active>
+                        <p className="text-green-600">7.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
+                    </Td>
+                    <Td>
+                      <Active>
+                        <p className="text-green-600">10.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>
+                      <div className="flex items-center">
+                        <div className="flex-shrink-0 h-10 w-10">
+                          <Image
+                            className={"object-contain rounded-full"}
+                            width={"100%"}
+                            height={"100%"}
+                            src="/assets/images/coin/Group 59-min.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className="ml-4">
+                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white">
+                            Bitcoin
+                          </div>
+                          <span className="text-gray-700 text-opacity-80 mt-2 block">
+                            Link
+                          </span>
+                        </div>
+                      </div>
+                    </Td>
+                    <Td>
+                      <div className="text-sm text-white dark:text-white">
+                        $ 26.35
+                      </div>
+                      <div className="text-green-600 inline-flex gap-1 text-xs mt-2">
+                        <BsArrowDown className="" />
+                        <span>$1.67</span>
+                      </div>
+                    </Td>
+                    <Td>
+                      <Active>
+                        <p className="text-red-600">-2.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
+                    </Td>
+                    <Td>
+                      <Active>
+                        <p className="text-green-600">7.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
+                    </Td>
+                    <Td>
+                      <Active>
+                        <p className="text-green-600">10.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
+                    </Td>
+                  </Tr>
+                  <Tr>
+                    <Td>
+                      <div className="flex items-center">
+                        <div className="flex-shrink-0 h-10 w-10">
+                          <Image
+                            className={"object-contain rounded-full"}
+                            width={"100%"}
+                            height={"100%"}
+                            src="/assets/images/coin/Group 59-min.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className="ml-4">
+                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white">
+                            Bitcoin
+                          </div>
+                          <span className="text-gray-700 text-opacity-80 mt-2 block">
+                            Link
+                          </span>
+                        </div>
+                      </div>
+                    </Td>
+                    <Td>
+                      <div className="text-sm text-white dark:text-white">
+                        $ 26.35
+                      </div>
+                      <div className="text-green-600 inline-flex gap-1 text-xs mt-2">
+                        <BsArrowDown className="" />
+                        <span>$1.67</span>
+                      </div>
+                    </Td>
+                    <Td>
+                      <Active>
+                        <p className="text-red-600">-2.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
+                    </Td>
+                    <Td>
+                      <Active>
+                        <p className="text-green-600">7.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
+                    </Td>
+                    <Td>
+                      <Active>
+                        <p className="text-green-600">10.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
                     </Td>
                   </Tr>
                   <Tr>
@@ -81,27 +203,41 @@ const TableCoin: React.FC = () => {
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-gray-900 mr-4 dark:text-white">
-                            اتریوم
+                          <div className="text-sm font-medium text-white mr-4 dark:text-white">
+                            Etherium
                           </div>
+                          <span className="text-gray-700 text-opacity-80 mt-2 block">
+                            Link
+                          </span>
                         </div>
                       </div>
                     </Td>
                     <Td>
-                      <div className="text-sm text-gray-900 dark:text-white">
-                        1000,251,000
+                      <div className="text-sm text-white dark:text-white">
+                        $ 38.35
+                      </div>
+                      <div className="text-green-600 inline-flex gap-1 text-xs mt-2">
+                        <BsArrowUp />
+                        <span>$1.67</span>
                       </div>
                     </Td>
-                    <Td>1.18-%</Td>
                     <Td>
-                      {" "}
-                      <Success>1.18-%</Success>
+                      <Active>
+                        <p className="text-red-600">-2.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
                     </Td>
-                    <Td>چارت</Td>
                     <Td>
-                      <Button color="#23d10f" className="">
-                        {t("Buy")}
-                      </Button>
+                      <Active>
+                        <p className="text-green-600">9.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
+                    </Td>
+                    <Td>
+                      <Active>
+                        <p className="text-red-600">-7.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
                     </Td>
                   </Tr>
                   <Tr>
@@ -117,27 +253,41 @@ const TableCoin: React.FC = () => {
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-gray-900 mr-4 dark:text-white">
-                            کاردانو
+                          <div className="text-sm font-medium text-white mr-4 dark:text-white">
+                            Cardano
                           </div>
+                          <span className="text-gray-700 text-opacity-80 mt-2 block">
+                            Link
+                          </span>
                         </div>
                       </div>
                     </Td>
                     <Td>
-                      <div className="text-sm text-gray-900 dark:text-white">
-                        1000,251,000
+                      <div className="text-sm text-white dark:text-white">
+                        $ 58.35
+                      </div>
+                      <div className="text-green-600 inline-flex gap-1 text-xs mt-2">
+                        <BsArrowUp />
+                        <span>$1.67</span>
                       </div>
                     </Td>
-                    <Td>1.18-%</Td>
                     <Td>
-                      {" "}
-                      <Success>1.18-%</Success>
+                      <Active>
+                        <p className="text-green-600">6.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
                     </Td>
-                    <Td>چارت</Td>
                     <Td>
-                      <Button color="#23d10f" className="">
-                        {t("Buy")}
-                      </Button>
+                      <Active>
+                        <p className="text-green-600">5.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
+                    </Td>
+                    <Td>
+                      <Active>
+                        <p className="text-red-600">-1.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
                     </Td>
                   </Tr>
                   <Tr>
@@ -148,32 +298,46 @@ const TableCoin: React.FC = () => {
                             className={"object-contain rounded-full"}
                             width={"100%"}
                             height={"100%"}
-                            src="/assets/images/coin/Rectangle 72-min"
+                            src="/assets/images/coin/g57-min.png"
                             alt=""
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-gray-900 mr-4 dark:text-white">
-                            استلار
+                          <div className="text-sm font-medium text-white mr-4 dark:text-white">
+                            Estelar
                           </div>
+                          <span className="text-gray-700 text-opacity-80 mt-2 block">
+                            Link
+                          </span>
                         </div>
                       </div>
                     </Td>
                     <Td>
-                      <div className="text-sm text-gray-900 dark:text-white">
-                        1000,251,000
+                      <div className="text-sm text-white dark:text-white">
+                        $ 80.35
+                      </div>
+                      <div className="text-red-600 inline-flex gap-1 text-xs mt-2">
+                        <BsArrowDown className="" />
+                        <span>$1.67</span>
                       </div>
                     </Td>
-                    <Td>1.18-%</Td>
                     <Td>
-                      {" "}
-                      <Success>1.18-%</Success>
+                      <Active>
+                        <p className="text-red-600">-1.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
                     </Td>
-                    <Td>چارت</Td>
                     <Td>
-                      <Button color="#23d10f" className="">
-                        {t("Buy")}
-                      </Button>
+                      <Active>
+                        <p className="text-green-600">3.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
+                    </Td>
+                    <Td>
+                      <Active>
+                        <p className="text-green-600">1.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
                     </Td>
                   </Tr>
                   <Tr>
@@ -184,32 +348,46 @@ const TableCoin: React.FC = () => {
                             className={"object-contain rounded-full"}
                             width={"100%"}
                             height={"100%"}
-                            src="/assets/images/coin/Rectangle 70-min.png"
+                            src="/assets/images/coin/Group 59-min.png"
                             alt=""
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-gray-900 mr-4 dark:text-white">
-                            ترون
+                          <div className="text-sm font-medium text-white mr-4 dark:text-white">
+                            Tron
                           </div>
+                          <span className="text-gray-700 text-opacity-80 mt-2 block">
+                            Link
+                          </span>
                         </div>
                       </div>
                     </Td>
                     <Td>
-                      <div className="text-sm text-gray-900 dark:text-white">
-                        1000,251,000
+                      <div className="text-sm text-white dark:text-white">
+                        $ 78.35
+                      </div>
+                      <div className="text-red-600 inline-flex gap-1 text-xs mt-2">
+                        <BsArrowDown className="" />
+                        <span>$1.67</span>
                       </div>
                     </Td>
-                    <Td>1.18-%</Td>
                     <Td>
-                      {" "}
-                      <Success>1.18-%</Success>
+                      <Active>
+                        <p className="text-red-600">-1.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
                     </Td>
-                    <Td>چارت</Td>
                     <Td>
-                      <Button color="#23d10f" className="">
-                        {t("Buy")}
-                      </Button>
+                      <Active>
+                        <p className="text-red-600">-1.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
+                    </Td>
+                    <Td>
+                      <Active>
+                        <p className="text-green-600">4.18%</p>
+                        <p className="text-gray-600 mt-2 ml-3">1h</p>
+                      </Active>
                     </Td>
                   </Tr>
                 </Tbody>
