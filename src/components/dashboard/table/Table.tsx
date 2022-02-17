@@ -53,8 +53,9 @@ const TableCoin: React.FC = () => {
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white">
-                            Bitcoin
+                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white inline-flex gap-2 cursor-pointer">
+                            <span>Bitcoin</span>
+                            <BsChevronDown className="text-white text-xs mt-1 font-semibold" />
                           </div>
                           <span className="text-gray-700 text-opacity-80 mt-2 block">
                             Link
@@ -103,8 +104,9 @@ const TableCoin: React.FC = () => {
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white">
-                            Bitcoin
+                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white inline-flex gap-2 cursor-pointer">
+                            <span>Bitcoin</span>
+                            <BsChevronDown className="text-white text-xs mt-1 font-semibold" />
                           </div>
                           <span className="text-gray-700 text-opacity-80 mt-2 block">
                             Link
@@ -153,8 +155,9 @@ const TableCoin: React.FC = () => {
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white">
-                            Bitcoin
+                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white cursor-pointer inline-flex gap-2">
+                            <span>Bitcoin</span>
+                            <BsChevronDown className="text-white text-xs mt-1 font-semibold" />
                           </div>
                           <span className="text-gray-700 text-opacity-80 mt-2 block">
                             Link
@@ -203,8 +206,9 @@ const TableCoin: React.FC = () => {
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-white mr-4 dark:text-white">
-                            Etherium
+                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white inline-flex gap-2 cursor-pointer">
+                            <span>Ethreium</span>
+                            <BsChevronDown className="text-white text-xs mt-1 font-semibold" />
                           </div>
                           <span className="text-gray-700 text-opacity-80 mt-2 block">
                             Link
@@ -253,8 +257,9 @@ const TableCoin: React.FC = () => {
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-white mr-4 dark:text-white">
-                            Cardano
+                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white inline-flex gap-2 cursor-pointer">
+                            <span>Cardano</span>
+                            <BsChevronDown className="text-white text-xs mt-1 font-semibold" />
                           </div>
                           <span className="text-gray-700 text-opacity-80 mt-2 block">
                             Link
@@ -303,8 +308,9 @@ const TableCoin: React.FC = () => {
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-white mr-4 dark:text-white">
-                            Estelar
+                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white inline-flex gap-2 cursor-pointer">
+                            <span>Estelar</span>
+                            <BsChevronDown className="text-white text-xs mt-1 font-semibold" />
                           </div>
                           <span className="text-gray-700 text-opacity-80 mt-2 block">
                             Link
@@ -353,8 +359,9 @@ const TableCoin: React.FC = () => {
                           />
                         </div>
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-white mr-4 dark:text-white">
-                            Tron
+                          <div className="text-sm font-medium text-gray-200 mr-4 dark:text-white inline-flex gap-2 cursor-pointer">
+                            <span>Tron</span>
+                            <BsChevronDown className="text-white text-xs mt-1 font-semibold" />
                           </div>
                           <span className="text-gray-700 text-opacity-80 mt-2 block">
                             Link
