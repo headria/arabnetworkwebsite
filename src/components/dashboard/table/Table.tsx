@@ -1,5 +1,14 @@
 import React from "react";
-import { Tr, Td, Tbody, Table, Thead, Th, Active } from "./TableStyled";
+import {
+  Tr,
+  Td,
+  Tbody,
+  Table,
+  Thead,
+  Th,
+  Active,
+  ChartImg,
+} from "./TableStyled";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import {
@@ -89,6 +98,17 @@ const TableCoin: React.FC = () => {
                         <p className="text-green-600">10.18%</p>
                         <p className="text-gray-600 mt-2 ml-3">1h</p>
                       </Active>
+                    </Td>
+                    <Td>
+                      <ChartImg>
+                        <Image
+                          className={"object-contain rounded-full"}
+                          width={"100%"}
+                          height={"100%"}
+                          src="/assets/images/chart/825.svg"
+                          alt=""
+                        />
+                      </ChartImg>
                     </Td>
                   </Tr>
                   <Tr>

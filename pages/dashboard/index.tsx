@@ -9,9 +9,8 @@ const Dashboard = () => {
   const [sideTab, setSidetab] = useState(0);
 
   return (
-    <div className="bg-darkBody w-full h-full">
-      <div className="grid grid-cols-12 gap-8 ">
-        <NavSide>side Navbar</NavSide>
+    <div className="bg-darkBody w-full h-screen">
+      <div className="grid grid-cols-12 gap-">
         <MiddleSide>
           <div className="w-full border-b border-gray-500 pt-11 border-opacity-30">
             <Table />

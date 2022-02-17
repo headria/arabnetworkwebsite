@@ -82,6 +82,18 @@ const Active = styled.div`
   ${tw`hover:bg-darBox opacity-80 cursor-pointer transition-all ease-in duration-300 rounded-lg w-24 h-20 flex flex-col justify-center items-center`}
 `;
 
+const ChartImg = styled.div`
+  width: 164px;
+  height: 48px;
+  text-align: center;
+  box-sizing: content-box;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  img {
+    filter: hue-rotate(300deg) saturate(210%) brightness(0.7) contrast(170%);
+  }
+`;
+
 export {
   Tr,
   Th,
@@ -94,4 +106,5 @@ export {
   Button,
   View,
   Active,
+  ChartImg,
 };

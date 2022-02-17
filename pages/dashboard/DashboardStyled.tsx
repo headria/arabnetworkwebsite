@@ -7,7 +7,7 @@ const RightSide = styled.div`
 `;
 
 const MiddleSide = styled.div`
-  ${tw`col-span-7 text-white `}
+  ${tw`col-span-9 text-white `}
   margin-top: 20px;
 `;
 
