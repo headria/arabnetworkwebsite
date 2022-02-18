@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 import tw from "twin.macro";
 
+const DashboardContainer = styled.div`
+  ${tw`bg-darkBody w-full`};
+`;
+
 const RightSide = styled.div`
   ${tw`col-span-3 text-white border-l border-gray-500 pt-2 border-opacity-30 mt-5`}
   height: calc(100vh - 2.5rem);
@@ -60,4 +64,4 @@ const NavItem = styled.div<NavActive>`
   }
 `;
 
-export { RightSide, MiddleSide, NavSide, NavItem };
+export { RightSide, MiddleSide, NavSide, NavItem, DashboardContainer };

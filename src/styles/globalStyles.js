@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
   height: 400px;
 }
 
+
 `;
 
 export default GlobalStyle;

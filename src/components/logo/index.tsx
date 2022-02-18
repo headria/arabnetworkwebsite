@@ -8,8 +8,8 @@ const Logo = () => {
       <Image
         src="/assets/images/logo-front.svg"
         alt="Arab Network"
-        width="240"
-        height="63"
+        width="200"
+        height="53"
       />
     </Link>
   );

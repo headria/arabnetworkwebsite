@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { RightSide, MiddleSide, NavItem } from "./DashboardStyled";
+import {
+  RightSide,
+  MiddleSide,
+  NavItem,
+  DashboardContainer,
+} from "./DashboardStyled";
 import { MdNotifications, MdOutlineMessage } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";
 import { RiDashboardLine } from "react-icons/ri";
@@ -15,8 +20,8 @@ const Dashboard = () => {
   const [sideTab, setSidetab] = useState(0);
 
   return (
-    <div className="bg-darkBody w-full ">
-      <div className="grid grid-cols-12 gap-">
+    <DashboardContainer>
+      <div className="grid grid-cols-12 gap-1 h-full">
         <MiddleSide>
           <HeaderDashboard />
           <div className="w-full  pt-11 border-opacity-10">
@@ -63,7 +68,7 @@ const Dashboard = () => {
           </div>
         </RightSide>
       </div>
-    </div>
+    </DashboardContainer>
   );
 };
 
