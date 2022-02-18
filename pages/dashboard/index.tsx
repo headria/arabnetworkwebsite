@@ -6,6 +6,7 @@ import {
   DashboardContainer,
 } from "./DashboardStyled";
 import { MdNotifications, MdOutlineMessage } from "react-icons/md";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";
 import { RiDashboardLine } from "react-icons/ri";
 import {
@@ -19,20 +20,32 @@ import { data } from "../../src/data/dashboard";
 import "../../third-party/react-chartjs-2-defaults";
 const Dashboard = () => {
   const [sideTab, setSideTab] = useState(0);
+  const [openRightSide, setOpenRightSide] = useState(false);
+  const [fullSide, setFullSide] = useState(false);
 
   return (
     <DashboardContainer>
-      <div className="grid grid-cols-12 gap-1 h-full">
-        <MiddleSide>
-          <HeaderDashboard />
+      <div className="grid lg:grid-cols-12 gap-1 h-full">
+        <MiddleSide isFull={fullSide}>
+          <HeaderDashboard
+            setFullSide={setFullSide}
+            fullSide={fullSide}
+            openRightSide={openRightSide}
+            setOpenRightSide={setOpenRightSide}
+          />
           <div className="w-full  pt-11 border-opacity-10">
             <Table />
           </div>
         </MiddleSide>
-        <RightSide>
+        <RightSide isFull={fullSide} isActive={openRightSide}>
           <div className="w-11/12 mx-auto">
-            <div className="flex justify-center">
-              <ul className="flex items-center gap-12">
+            <div className="flex justify-center ">
+              <ul className="flex items-center gap-12 ">
+                {openRightSide && (
+                  <li onClick={() => setOpenRightSide(false)}>
+                    <AiOutlineCloseCircle fontSize={19} />
+                  </li>
+                )}
                 <NavItem isActive={sideTab === 0} onClick={() => setSideTab(0)}>
                   <MdNotifications fontSize={19} />
                 </NavItem>

@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import tw from "twin.macro";
 
 const DashboardContainer = styled.div`
@@ -26,15 +26,32 @@ const DashboardContainer = styled.div`
   }
 `;
 
-const RightSide = styled.div`
-  ${tw`col-span-3 text-white border-l border-gray-500 pt-2 border-opacity-30 mt-5`}
+interface isMobileRightSide {
+  isActive: boolean;
+}
+const RightSide = styled.div<isMobileRightSide>`
+  ${tw`col-span-3 text-white border-l border-gray-500 pt-2 border-opacity-30 mt-5 transition-all ease-in-out duration-300 `}
+
+  ${({ isActive }) =>
+    isActive
+      ? css`
+          ${tw`block fixed -top-6 right-0 bg-darkBody z-50 pt-4`}
+          width: 450px;
+        `
+      : css`
+          ${tw`hidden lg:block overflow-hidden lg:overflow-y-auto overflow-x-hidden`}
+        `};
+
   height: 60rem;
-  overflow-x: hidden;
-  overflow-y: auto;
 `;
 
-const MiddleSide = styled.div`
-  ${tw`col-span-9 text-white `}
+interface isFullSide {
+  isFull: boolean;
+}
+const MiddleSide = styled.div<isFullSide>`
+  ${tw`text-white`}
+  ${({ isFull }) => (isFull ? tw`col-span-9` : tw`col-span-9 `)}
+  
   height: 60rem;
   overflow-y: auto;
   overflow-x: hidden;
@@ -46,10 +63,10 @@ const NavSide = styled.div`
 `;
 
 interface NavActive {
-    isActive: boolean;
+  isActive: boolean;
 }
 
-const NavItem = styled.div<NavActive>`
+const NavItem = styled.li<NavActive>`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
@@ -64,15 +81,15 @@ const NavItem = styled.div<NavActive>`
     color: #fff;
   }
 
-  ${({isActive}) => isActive && css``}
-  ${({isActive}) =>
-          isActive &&
-          css`
-            width: 2rem;
-            height: 2rem;
-            border: 1.5px solid #fff;
-            border-radius: 5px;
-          `}
+  ${({ isActive }) => isActive && css``}
+  ${({ isActive }) =>
+    isActive &&
+    css`
+      width: 2rem;
+      height: 2rem;
+      border: 1.5px solid #fff;
+      border-radius: 5px;
+    `}
   outline: none;
   width: 2rem;
   height: 2rem;
@@ -81,15 +98,15 @@ const NavItem = styled.div<NavActive>`
   justify-content: center;
 
   svg {
-    ${({isActive}) =>
-            isActive
-                    ? css`
-                      color: #fff;
-                    `
-                    : css`
-                      color: #0668af;
-                    `}
+    ${({ isActive }) =>
+      isActive
+        ? css`
+            color: #fff;
+          `
+        : css`
+            color: #0668af;
+          `}
   }
 `;
 
-export {RightSide, MiddleSide, NavSide, NavItem, DashboardContainer};
+export { RightSide, MiddleSide, NavSide, NavItem, DashboardContainer };

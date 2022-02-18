@@ -45,7 +45,7 @@ const BurGerNav = styled.div<IProps>`
   bottom: 0;
   background: #022640;
   width: 300px;
-  z-index: 60;
+  z-index: 100;
   padding: 20px;
   transform: ${({ show }) => (show ? "translateX(0)" : "translateX(100%)")};
   transition: transform 0.5s ease-in-out;
