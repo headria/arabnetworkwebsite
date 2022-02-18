@@ -16,8 +16,9 @@ import {
   HeaderDashboard,
 } from "@components";
 import { data } from "../../src/data/dashboard";
+import "../../third-party/react-chartjs-2-defaults";
 const Dashboard = () => {
-  const [sideTab, setSidetab] = useState(0);
+  const [sideTab, setSideTab] = useState(0);
 
   return (
     <DashboardContainer>
@@ -32,20 +33,20 @@ const Dashboard = () => {
           <div className="w-11/12 mx-auto">
             <div className="flex justify-center">
               <ul className="flex items-center gap-12">
-                <NavItem isActive={sideTab === 0} onClick={() => setSidetab(0)}>
+                <NavItem isActive={sideTab === 0} onClick={() => setSideTab(0)}>
                   <MdNotifications fontSize={19} />
                 </NavItem>
-                <NavItem isActive={sideTab === 1} onClick={() => setSidetab(1)}>
+                <NavItem isActive={sideTab === 1} onClick={() => setSideTab(1)}>
                   <MdOutlineMessage fontSize={16} />
                 </NavItem>
-                <NavItem isActive={sideTab === 2} onClick={() => setSidetab(2)}>
+                <NavItem isActive={sideTab === 2} onClick={() => setSideTab(2)}>
                   <RiDashboardLine fontSize={16} />
                 </NavItem>
-                <NavItem isActive={sideTab === 3} onClick={() => setSidetab(3)}>
+                <NavItem isActive={sideTab === 3} onClick={() => setSideTab(3)}>
                   <FaUserAlt fontSize={16} />
                 </NavItem>
               </ul>
-              <div className="pt-12"></div>
+              <div className="pt-12" />
             </div>
             <div className="border-t border-gray-500 mx-auto border-opacity-30 pl-5 pr-5 flex flex-col justify-center  items-center">
               <MyBalance />

@@ -1,17 +1,43 @@
-import styled, { css } from "styled-components";
+import styled, {css} from "styled-components";
 import tw from "twin.macro";
 
 const DashboardContainer = styled.div`
   ${tw`bg-darkBody w-full`};
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+    height: 2rem;
+  }
+
+  &::-webkit-scrollbar-button {
+    background: #2e2d2d;
+  }
+
+  &::-webkit-scrollbar-corner {
+    border-right: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #2e2d2d;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background: #949393;
+  }
 `;
 
 const RightSide = styled.div`
   ${tw`col-span-3 text-white border-l border-gray-500 pt-2 border-opacity-30 mt-5`}
-  height: calc(100vh - 2.5rem);
+  height: 60rem;
+  overflow-x: hidden;
+  overflow-y: auto;
 `;
 
 const MiddleSide = styled.div`
   ${tw`col-span-9 text-white `}
+  height: 60rem;
+  overflow-y: auto;
+  overflow-x: hidden;
   margin-top: 20px;
 `;
 
@@ -20,8 +46,9 @@ const NavSide = styled.div`
 `;
 
 interface NavActive {
-  isActive: boolean;
+    isActive: boolean;
 }
+
 const NavItem = styled.div<NavActive>`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -32,20 +59,21 @@ const NavItem = styled.div<NavActive>`
     border: 1.5px solid #fff;
     border-radius: 5px;
   }
+
   &:hover svg {
     color: #fff;
   }
 
-  ${({ isActive }) => isActive && css``}
-  ${({ isActive }) =>
-    isActive &&
-    css`
-      width: 2rem;
-      height: 2rem;
-      border: 1.5px solid #fff;
-      border-radius: 5px;
-    `}
-  outline:none;
+  ${({isActive}) => isActive && css``}
+  ${({isActive}) =>
+          isActive &&
+          css`
+            width: 2rem;
+            height: 2rem;
+            border: 1.5px solid #fff;
+            border-radius: 5px;
+          `}
+  outline: none;
   width: 2rem;
   height: 2rem;
   display: flex;
@@ -53,15 +81,15 @@ const NavItem = styled.div<NavActive>`
   justify-content: center;
 
   svg {
-    ${({ isActive }) =>
-      isActive
-        ? css`
-            color: #fff;
-          `
-        : css`
-            color: #0668af;
-          `}
+    ${({isActive}) =>
+            isActive
+                    ? css`
+                      color: #fff;
+                    `
+                    : css`
+                      color: #0668af;
+                    `}
   }
 `;
 
-export { RightSide, MiddleSide, NavSide, NavItem, DashboardContainer };
+export {RightSide, MiddleSide, NavSide, NavItem, DashboardContainer};
