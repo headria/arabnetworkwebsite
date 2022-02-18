@@ -1,18 +1,25 @@
 import React, { useState } from "react";
-import { RightSide, NavSide, MiddleSide, NavItem } from "./DashboardStyled";
+import { RightSide, MiddleSide, NavItem } from "./DashboardStyled";
 import { MdNotifications, MdOutlineMessage } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";
 import { RiDashboardLine } from "react-icons/ri";
-import { Widget, NewWidget, MyBalance, Table } from "@components";
+import {
+  Widget,
+  NewWidget,
+  MyBalance,
+  Table,
+  HeaderDashboard,
+} from "@components";
 import { data } from "../../src/data/dashboard";
 const Dashboard = () => {
   const [sideTab, setSidetab] = useState(0);
 
   return (
-    <div className="bg-darkBody w-full h-screen">
+    <div className="bg-darkBody w-full ">
       <div className="grid grid-cols-12 gap-">
         <MiddleSide>
-          <div className="w-full border-b border-gray-500 pt-11 border-opacity-30">
+          <HeaderDashboard />
+          <div className="w-full  pt-11 border-opacity-10">
             <Table />
           </div>
         </MiddleSide>

@@ -13,3 +13,4 @@ export { default as MyBalance } from "./dashboard/MyBalance";
 export { default as NewWidget } from "./dashboard/NewWidget";
 export { default as Widget } from "./dashboard/Widget";
 export { default as Table } from "./dashboard/table/Table";
+export { default as HeaderDashboard } from "./dashboard/HeaderDashboard";

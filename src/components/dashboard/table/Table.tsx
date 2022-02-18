@@ -100,13 +100,11 @@ const TableCoin: React.FC = () => {
                       </Active>
                     </Td>
                     <Td>
-                      <ChartImg>
-                        <Image
-                          className={"object-contain rounded-full"}
-                          width={"100%"}
-                          height={"100%"}
-                          src="/assets/images/chart/825.svg"
-                          alt=""
+                      <ChartImg isUp={false}>
+                        <img
+                          src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/2011.svg"
+                          alt="tezos-7d-price-graph"
+                          loading="lazy"
                         />
                       </ChartImg>
                     </Td>
@@ -161,6 +159,16 @@ const TableCoin: React.FC = () => {
                         <p className="text-gray-600 mt-2 ml-3">1h</p>
                       </Active>
                     </Td>
+
+                    <Td>
+                      <ChartImg isUp={false}>
+                        <img
+                          src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/2011.svg"
+                          alt="tezos-7d-price-graph"
+                          loading="lazy"
+                        />
+                      </ChartImg>
+                    </Td>
                   </Tr>
                   <Tr>
                     <Td>
@@ -211,6 +219,15 @@ const TableCoin: React.FC = () => {
                         <p className="text-green-600">10.18%</p>
                         <p className="text-gray-600 mt-2 ml-3">1h</p>
                       </Active>
+                    </Td>
+                    <Td>
+                      <ChartImg isUp={true}>
+                        <img
+                          src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/4256.svg"
+                          alt="tezos-7d-price-graph"
+                          loading="lazy"
+                        />
+                      </ChartImg>
                     </Td>
                   </Tr>
                   <Tr>
@@ -263,6 +280,15 @@ const TableCoin: React.FC = () => {
                         <p className="text-gray-600 mt-2 ml-3">1h</p>
                       </Active>
                     </Td>
+                    <Td>
+                      <ChartImg isUp={false}>
+                        <img
+                          src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/2011.svg"
+                          alt="tezos-7d-price-graph"
+                          loading="lazy"
+                        />
+                      </ChartImg>
+                    </Td>
                   </Tr>
                   <Tr>
                     <Td>
@@ -313,6 +339,15 @@ const TableCoin: React.FC = () => {
                         <p className="text-red-600">-1.18%</p>
                         <p className="text-gray-600 mt-2 ml-3">1h</p>
                       </Active>
+                    </Td>
+                    <Td>
+                      <ChartImg isUp={false}>
+                        <img
+                          src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/2011.svg"
+                          alt="tezos-7d-price-graph"
+                          loading="lazy"
+                        />
+                      </ChartImg>
                     </Td>
                   </Tr>
                   <Tr>
@@ -365,6 +400,15 @@ const TableCoin: React.FC = () => {
                         <p className="text-gray-600 mt-2 ml-3">1h</p>
                       </Active>
                     </Td>
+                    <Td>
+                      <ChartImg isUp={true}>
+                        <img
+                          src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/4256.svg"
+                          alt="tezos-7d-price-graph"
+                          loading="lazy"
+                        />
+                      </ChartImg>
+                    </Td>
                   </Tr>
                   <Tr>
                     <Td>
@@ -415,6 +459,15 @@ const TableCoin: React.FC = () => {
                         <p className="text-green-600">4.18%</p>
                         <p className="text-gray-600 mt-2 ml-3">1h</p>
                       </Active>
+                    </Td>
+                    <Td>
+                      <ChartImg isUp={true}>
+                        <img
+                          src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/4256.svg"
+                          alt="klaytn-7d-price-graph"
+                          loading="lazy"
+                        />
+                      </ChartImg>
                     </Td>
                   </Tr>
                 </Tbody>

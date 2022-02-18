@@ -1,5 +1,5 @@
 import React from "react";
-
+import PitChart from "@components/chart/PitChart";
 const MyBalance = () => {
   return (
     <div className="my-5 w-full px-5">
@@ -33,6 +33,7 @@ const MyBalance = () => {
           </select>
         </div>
       </div>
+      <PitChart />
       <div className="underline flex items-end justify-end mt-4 text-gray-600 text-sm">
         Details
       </div>
