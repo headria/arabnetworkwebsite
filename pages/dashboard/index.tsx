@@ -17,7 +17,6 @@ import {
   HeaderDashboard,
 } from "@components";
 import { data } from "../../src/data/dashboard";
-import "../../third-party/react-chartjs-2-defaults";
 const Dashboard = () => {
   const [sideTab, setSideTab] = useState(0);
   const [openRightSide, setOpenRightSide] = useState(false);
