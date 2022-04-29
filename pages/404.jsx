@@ -11,7 +11,7 @@ const Comming = () => {
   }, []);
   return (
     <BG>
-      <Convas id="tsparticles" className="" />
+      {/* <Convas id="tsparticles" className="" /> */}
       <Soon>
         <div className="img_control">
           <img src={"/assets/images/bg/Group 109.png"} alt="" />

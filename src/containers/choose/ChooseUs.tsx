@@ -6,8 +6,7 @@ const ChooseUs = () => {
     <Wrapper>
       <Container>
         <div className={"title"}>
-          <Title>Why Choose us</Title>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <Title>We are building a revolutionary ecosystem.</Title>
         </div>
         <Cards />
       </Container>

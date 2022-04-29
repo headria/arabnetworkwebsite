@@ -20,15 +20,15 @@ const SliderContainer = () => {
               <div className={"left_Side mt-5 "}>
                 <Title>Arab Network</Title>
                 <SubTitle>
-                  The Feature Of Blockchain
+                  Your hot Gateway for Future Opportunities
                   <br />
-                  Technology in the Arab World.
                 </SubTitle>
-                <Subscribe
-                  className={"mt-3"}
-                  titleClass={"text-white"}
-                  title={"Subscribe to our newsletter"}
-                />
+
+                <div
+                  style={{
+                    height: "100px",
+                  }}
+                ></div>
               </div>
             </Col>
             <Col className={"z-10"}>

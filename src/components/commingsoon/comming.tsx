@@ -11,7 +11,7 @@ const Comming = () => {
   }, []);
   return (
     <BG>
-      <Convas id="tsparticles" className="" />
+      {/* <Convas id="tsparticles" className="" /> */}
       <Soon>
         <h1>Commming Soon</h1>
         <p>

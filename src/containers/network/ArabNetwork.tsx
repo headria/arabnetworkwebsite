@@ -23,11 +23,12 @@ const ArabNetWork = () => {
       <Wrapper>
         <BackGround>
           <Container>
-            <h3 className={"Arab_Network"}>
-              How Arab Network will Lead The BlockChain Technologie
-              <br />
-              In the Arab World
-            </h3>
+            <Row>
+              <h3 className={"Arab_Network"}>
+                A world where value is created and exchanged by everyone in an
+                efficient, open, and secure manner.
+              </h3>
+            </Row>
             <Row>
               <Col>
                 <div className={"Start_Img"}>
@@ -39,20 +40,15 @@ const ArabNetWork = () => {
                 </div>
               </Col>
               <Col>
-                <Title>Arab BlockChain</Title>
+                <Title>What is Arab Network?</Title>
                 <Desc>
-                  Arab is third-generation blockchain platform dor building fast
-                  scalable distributed application with feeless transactions
-                  with making is the ideal network for mainstream adoption
+                  Arab Network is a community that doesn't have a central
+                  command. There is no single owner. Instead, a group of people
+                  shares their knowledge in blockchain technology, business, and
+                  education, working together to empower the Arab community in
+                  blockchain for a better future.
                 </Desc>
-                <div className={"flex space-x-5 mt-5"}>
-                  <Control>
-                    <FaChevronLeft />
-                  </Control>
-                  <Control>
-                    <FaChevronRight />
-                  </Control>
-                </div>
+                <div className={"flex space-x-5 mt-5"}></div>
               </Col>
             </Row>
           </Container>

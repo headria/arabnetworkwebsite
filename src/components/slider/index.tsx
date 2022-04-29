@@ -13,13 +13,13 @@ interface ISliderPorps {
 }
 
 const Slider = ({ children, fullHeight }: ISliderPorps) => {
-  useEffect(() => {
-    tsParticles.load("tsparticles", params);
-  }, []);
+  // useEffect(() => {
+  //   tsParticles.load("tsparticles", params);
+  // }, []);
   return (
     <>
       <SliderWrapper isFullHeight={fullHeight}>
-        <Convas id="tsparticles" className="" />
+        {/* <Convas id="tsparticles" className="" /> */}
         {children}
       </SliderWrapper>
     </>
