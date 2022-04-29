@@ -4,7 +4,7 @@ import {
   MiddleSide,
   NavItem,
   DashboardContainer,
-} from "./DashboardStyled";
+} from "../../src/containers/DashboardStyled";
 import { MdNotifications, MdOutlineMessage } from "react-icons/md";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";
@@ -37,7 +37,7 @@ const Dashboard = () => {
             <Table />
           </div>
         </MiddleSide>
-        <RightSide isFull={fullSide} isActive={openRightSide}>
+        <RightSide isActive={openRightSide}>
           <div className="w-11/12 mx-auto">
             <div className="flex justify-center ">
               <ul className="flex items-center gap-12 ">
