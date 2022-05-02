@@ -17,15 +17,13 @@ const Wallet = () => {
           <Row>
             <Col>
               <div>
-                <Title>Arab Wallet</Title>
-                <SubTitle>
-                  Buy, Store, Exchange Cryptocurrency And Interact Dapps
-                </SubTitle>
+                <Title>Arab Gate</Title>
+                <SubTitle>All in One Gate</SubTitle>
                 <Desc>
-                  The Arab Network community grant program funds the creation of
-                  new smart contract applications and new ideas that advances
-                  the development of the Arab Network and brings true value
-                  across the Arab World.
+                  Arab Gate is a non-custodial wallet that will connect billions
+                  of users around the world safely. Arab Gate offers multi-chain
+                  (NFT & cryptocurrency), DEX, DApp Browser, Payment solutions,
+                  and AI Virtual assistant.
                 </Desc>
                 <div className={"flex gap-5"}>
                   <div className={"w-44 h-44"}>
@@ -49,7 +47,7 @@ const Wallet = () => {
               <div className={"wallet_App"}>
                 <img
                   className={"max-w-full w-full h-full max-w-full"}
-                  src="/assets/images/bg/app.png"
+                  src="/assets/images/bg/assets-light.png"
                   alt=""
                 />
               </div>

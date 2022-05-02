@@ -2,42 +2,52 @@
   "name": "network",
   "Choose": [
     {
-      "name": "Speed",
-      "description": "Arab is able to serve up to 15000+ Transactions Per Second Arab processes thousands of transactions per second and extends to do even more.",
+      "name": "Arab Gate",
+      "description": "Arab Gate is a non-custodial wallet that will connect billions of users around the world safely. Arab Gate offers multi-chain (NFT & cryptocurrency), DEX, DApp Browser, Payment solutions, and AI Virtual assistant.",
+      "url": "",
+      "icon": "/assets/images/ecosystem/arabgate.png"
+    },
+    {
+      "name": "Arab Gate",
+      "description": "",
       "url": "https://tailwindcss.com/docs",
-      "icon": "/assets/images/icons/speed.svg"
+      "icon": "/assets/images/ecosystem/arabgate"
     },
     {
-      "name": "flexible and easy-to-use free modules",
-      "description": "There are two cost models available, with the opportunity for projects to fund user Fees.",
-      "url": "https://styled-components.com/docs",
-      "icon": "/assets/images/icons/coin.svg"
+      "name": "Arab Gate",
+      "description": "",
+      "url": "https://tailwindcss.com/docs",
+      "icon": "/assets/images/ecosystem/arabgate"
     },
     {
-      "name": "Energy Efficient",
-      "description": "Arab Network (DPoS) consensus model is a game-changer, unlike other blockchains, it uses very low power usage while giving high speed on a stable base.",
-      "url": "https://redux.js.org/introduction/getting-started",
-      "icon": "/assets/images/icons/earth.svg"
+      "name": "Arab Gate",
+      "description": "",
+      "url": "https://tailwindcss.com/docs",
+      "icon": "/assets/images/ecosystem/arabgate"
     },
     {
-      "name": "Human-Friendly Names",
-      "description": "Unique human-readable names easy to remember.",
-      "url": "https://redux-toolkit.js.org/rtk-query/overview",
-      "icon": "/assets/images/icons/human.svg",
-      "Follow": "Follow"
+      "name": "Arab Gate",
+      "description": "",
+      "url": "https://tailwindcss.com/docs",
+      "icon": "/assets/images/ecosystem/arabgate"
     },
     {
-      "name": "unknown",
-      "description": "There are two cost models available, with the opportunity for projects to fund user Fees.",
-      "url": "https://github.com/isaachinman/next-i18next",
-      "icon": "/assets/images/icons/human.svg"
+      "name": "Arab Gate",
+      "description": "",
+      "url": "https://tailwindcss.com/docs",
+      "icon": "/assets/images/ecosystem/arabgate"
     },
     {
-      "name": "Technology",
-      "description": "Arab is planning to be one of the first blockchains compatible with both eosio c++ smart contracts and solidity-based Ethereum Virtual Machine smart contracts in the near future. This will expose Arab to today's largest developer community.",
-      "url": "https://github.com/isaachinman/next-i18next",
-      "icon": "/assets/images/icons/technical.svg"
-
+      "name": "Arab Gate",
+      "description": "",
+      "url": "https://tailwindcss.com/docs",
+      "icon": "/assets/images/ecosystem/arabgate"
+    },
+    {
+      "name": "Arab Gate",
+      "description": "",
+      "url": "https://tailwindcss.com/docs",
+      "icon": "/assets/images/ecosystem/arabgate"
     }
   ],
   "Socail": [
